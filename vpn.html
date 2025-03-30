@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohbet 😆</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            font-size: 24px;
+            padding: 15px 30px;
+            border-radius: 10px;
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5);
+        }
+        button:hover {
+            background-color: #ff2e00;
+            transform: scale(1.1);
+        }
+        #prank {
+            display: none;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        img {
+            width: 300px;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+        .msg {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff5733;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mugt kot Al (Sohbet )</h1>
+    <p>Aşakdaky düwmä basyp, Kody derrew alyp bilersiň!</p>
+    <button onclick="showPrank()">Kody AL</button>
+
+    <div id="prank">
+        <p class="msg">HAHA! Çynyň bilen basdyňmaý 🤣</p>
+        <img src="12.jpg" alt="Nah Çeken Adam">
+    </div>
+
+    <script>
+        function showPrank() {
+            document.getElementById("prank").style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
